@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "dyingember:item/binding_codex"
+    "layer0": "csmp_dyingember:item/binding_codex"
   }
 }
