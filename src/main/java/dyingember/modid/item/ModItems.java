@@ -9,12 +9,15 @@ import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 
 public class ModItems {
- public static final Item BINDING_CODEX = registerItem("binding_codex", new Item(new FabricItemSettings()));
+ public static final Item BINDING_CODEX = registerItem("binding_codex", new Item(new FabricItemSettings().maxCount(3).rarity(Rarity.EPIC)));
+ public static final Item BINDING_PENDANT = registerItem("binding_pendant", new Item(new FabricItemSettings()));
 
  private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
      entries.add(BINDING_CODEX);
+     entries.add(BINDING_PENDANT);
  }
 
     private static Item registerItem(String name, Item item) {

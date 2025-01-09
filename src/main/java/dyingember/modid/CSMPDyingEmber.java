@@ -1,5 +1,6 @@
 package dyingember.modid;
 
+import dyingember.modid.item.ModItemGroups;
 import dyingember.modid.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -13,7 +14,7 @@ public class CSMPDyingEmber implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 
 
