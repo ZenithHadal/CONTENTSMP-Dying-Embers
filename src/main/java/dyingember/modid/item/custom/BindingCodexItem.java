@@ -19,7 +19,8 @@ public class BindingCodexItem extends Item {
     }
 
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-        ItemStack.getOrCreateNbt.put();
+        ItemStack stack = user.getStackInHand(hand);
+        stack.getOrCreateNbt.put();
 
         return TypedActionResult.pass(user.getStackInHand(hand));
     }
