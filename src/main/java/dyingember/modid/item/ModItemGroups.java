@@ -15,7 +15,7 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.dyingember"))
                     .icon(() -> new ItemStack(ModItems.BINDING_CODEX)).entries((displayContext, entries) -> {
                         entries.add(ModItems.BINDING_CODEX);
-                        entries.add(ModItems.BINDING_PENDANT);
+                        entries.add(ModItems.BINDING_MEDAL1);
 
 
                     }).build());

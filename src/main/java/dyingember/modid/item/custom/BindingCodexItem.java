@@ -19,14 +19,14 @@ public class BindingCodexItem extends Item {
     }
 
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-
+        ItemStack.getOrCreateNbt.put();
 
         return TypedActionResult.pass(user.getStackInHand(hand));
     }
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.literal("test"));
+        tooltip.add(Text.literal("§3§oA reminder of your eternal pact."));
         super.appendTooltip(stack, world, tooltip, context);
     }
 }
